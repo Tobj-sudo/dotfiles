@@ -1,0 +1,69 @@
+# .bash_aliases
+
+# typos
+alias cls='clear'
+alias claer='clear'
+
+# ls utils
+alias ll='ls -lFASh'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias fucking='sudo'
+alias please='sudo'
+
+# shortcuts
+alias files='nautilus .'
+alias bru='source /home/tobi/.bashrc'
+alias rscp='rsync -avz --info=progress2'
+alias trim='time sudo fstrim -v /'
+alias mvn-up='mvn versions:display-dependency-updates'
+
+# vim
+alias v='nvim'
+alias vim='nvim'
+alias sv='EDITOR=nvim sudoedit'
+
+# makros
+alias tmp='currdir=$PWD; alias back="cd ${currdir}"; tempdir=$(mktemp -d); alias tmpdir="cd ${tempdir}"; cd "${tempdir}"'
+alias sdanal='(systemd-analyze dot | dot -Tsvg > "${HOME}/Pictures/$(date +%y-%m-%d:%T)-systemd.svg" 3> /dev/null; alert)&'
+alias pyup="pip3 list -o | cut -f1 -d' ' | tr ' ' '\n' | awk '{if(NR>=3)print}' | cut -d' ' -f1 | xargs -n1 pip3 install -U"
+
+# movement
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ..4='cd ../../../..'
+alias ..5='cd ../../../../..'
+
+# readability
+alias free='free -h'
+alias df='df -h'
+alias du='du -hc'
+alias diff='colordiff'
+alias mount='mount |column -t'
+
+# safety
+alias cp='cp -i'
+alias mv='mv -i'
+
+# git
+alias gpu='git pull'
+alias gps='git push'
+alias gss='git status'
+alias ga='git add'
+
+# misc
+alias now='date +"%T"'
+alias path='echo -e ${PATH//:/\\n}'
+alias apt='sudo apt'
+alias apt-get='apt'
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot now'
+alias mkdir='mkdir -pv'
+alias imgsign='cosign sign -y --key ~/cosign.key'
+alias ffprobe='ffprobe -hide_banner'
+alias ffmpeg='ffmpeg -hide_banner'
+
+# alias tunnel-rp='ssh -L 12345:10.0.101.50:12345 -J ux5 lidar'
+# alias up="sudo sh -c 'apt update && apt upgrade && apt autoremove -y && apt clean ' && flatpak update && platformio upgrade"
