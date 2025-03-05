@@ -1,0 +1,14 @@
+[credential]
+	helper = store
+[gpg]
+	format = ssh
+[user]
+	signingkey = /home/tobi/.ssh/id_rsa.pub
+	name = tobi
+	email = tobias.schraml0@gmx.de
+[commit]
+	gpgsign = true
+[pull]
+	ff = only
+[core]
+	editor = nvim
