@@ -1,1 +1,9 @@
 key.txt.age
+LICENSE
+
+{{ if eq .machine "work" -}}
+.gitconfig
+.config/atuin/config.toml
+.local/share/atuin/key
+.ssh
+{{ end -}}
