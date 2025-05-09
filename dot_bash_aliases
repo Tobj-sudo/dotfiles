@@ -64,6 +64,7 @@ alias mkdir='mkdir -pv'
 alias imgsign='cosign sign -y --key ~/cosign.key'
 alias ffprobe='ffprobe -hide_banner'
 alias ffmpeg='ffmpeg -hide_banner'
+alias vimdiff='nvim -d'
 
 # alias tunnel-rp='ssh -L 12345:10.0.101.50:12345 -J ux5 lidar'
 # alias up="sudo sh -c 'apt update && apt upgrade && apt autoremove -y && apt clean ' && flatpak update && platformio upgrade"
