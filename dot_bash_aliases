@@ -14,7 +14,7 @@ alias please='sudo'
 
 # shortcuts
 alias files='nautilus .'
-alias bru='source /home/tobi/.bashrc'
+alias bru='source ~/.bashrc'
 alias rscp='rsync -avz --info=progress2'
 alias trim='time sudo fstrim -v /'
 alias mvn-up='mvn versions:display-dependency-updates'
