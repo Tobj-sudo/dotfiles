@@ -286,7 +286,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-// theme "dracula"
+theme "dracula"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -311,6 +311,8 @@ default_mode "normal"
 // (Requires restart)
 // 
 // layout_dir "/tmp"
+layout_dir "~/.config/zellij/layouts"
+default_layout "main"
  
 // The folder in which Zellij will look for themes
 // (Requires restart)
